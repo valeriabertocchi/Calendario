@@ -840,7 +840,7 @@ function renderSide(){
     ${sec('todo','Task',open2,'data-act="nav" data-v="todo"','focusqa','Nuova task',todo,V.view==='todo')}
     ${sec('cals','Calendari',0,'data-act="sec" data-k="cals"','newcal','Nuovo calendario',cals)}
     ${sec('pages','Schede',0,'data-act="nav" data-v="pages"','newpage','Nuova scheda',pages,V.view==='pages')}
-    <div class="side-foot">Per ora i dati restano su questo dispositivo.<button data-act="reset" data-confirm="Tocca di nuovo per cancellare tutto">Cancella tutti i dati</button></div>`;
+    <div class="side-foot">Per ora i dati restano su questo dispositivo.</div>`;
 }
 const dayLabel=d=>d===TODAY?'Oggi':d===addDays(TODAY,1)?'Domani':d===addDays(TODAY,2)?'Dopodomani':WD[pd(d).getDay()].replace(/^./,c=>c.toUpperCase())+' '+pd(d).getDate()+' '+MO[pd(d).getMonth()].slice(0,3);
 const dayLong=d=>WD[pd(d).getDay()]+' '+pd(d).getDate()+' '+MO[pd(d).getMonth()];
